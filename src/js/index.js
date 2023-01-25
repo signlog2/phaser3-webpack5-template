@@ -1,9 +1,10 @@
 import Phaser from 'phaser'
+import GameScene from './gameScene';
 
 const config = {
    type: Phaser.AUTO,
    width: 800,
-   height: 600,
+   height: 800,
    title: 'Infinite tower',
    physics: {
       default: 'arcade',
@@ -12,21 +13,7 @@ const config = {
          debug: false
       }
    },
-   scene: {
-      preload: preload,
-      create: create,
-      update: update
-   }
+   scene: [GameScene]
 };
 
-function preload() {
-
-}
-
-function create() {
-
-}
-
-function update() {
-
-}
+new Phaser.Game(config);
