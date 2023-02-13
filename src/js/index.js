@@ -3,9 +3,9 @@ import GameScene from './gameScene';
 
 const config = {
    type: Phaser.AUTO,
-   width: 800,
-   height: 800,
-   title: 'Infinite tower',
+   width: 600,
+   height: 600,
+   title: 'My Game',
    physics: {
       default: 'arcade',
       arcade: {
